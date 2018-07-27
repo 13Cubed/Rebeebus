@@ -30,4 +30,4 @@ IP Address,Hostname,Count
 
 - Using the "**-s**" option, Rebeebus will sort the addresses numerically by the first octet.
 
-**Rebeebus uses the dnspython library, and is compatible with Python 2 and 3.**
+**Rebeebus uses the [dnspython](https://github.com/rthalley/dnspython) library, and is compatible with Python 2 and 3.**
