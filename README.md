@@ -1,5 +1,5 @@
 # Rebeebus
-**An rDNS lookup utility. This script is very useful for parsing email headers, log files, and any other arbitrary data for IPv4 addresses, and then performing reverse DNS lookups for each of those addresses using the specified DNS server.**
+**Rebeebus is an rDNS lookup utility. This script is very useful for parsing email headers, log files, and any other arbitrary data for IPv4 addresses, and then performing reverse DNS lookups for each of those addresses using the specified DNS server.**
 
 For any given file(s), Rebeebus will:
 
