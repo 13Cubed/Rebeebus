@@ -28,6 +28,6 @@ IP Address,Hostname,Count
 52.73.116.225,ec2-52-73-116-225.compute-1.amazonaws.com.,5
 ```
 
-- Using the "**-s**" option, Rebeebus will sort the addresses numerically by the first octet.
+- Using the "**-s**" option, Rebeebus will sort addresses by count (descending).
 
 **Rebeebus uses the [dnspython](https://github.com/rthalley/dnspython) library, and is compatible with Python 2 and 3.**
