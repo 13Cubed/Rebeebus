@@ -172,7 +172,7 @@ def main():
     writeToFile = 1
     outfile = args['write']
 
-  if (args['sort-by-count']):
+  if (args['sort_by_count']):
     sortByCount = 1
 
   # Let's make sure the specified DNS server is working before we go any further ...
