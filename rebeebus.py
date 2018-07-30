@@ -142,7 +142,7 @@ def main():
   requiredArguments.add_argument('-d','--dns-server', help='Use the specified DNS server to resolve addresses', required=True)
   parser.add_argument('-p', '--include-private', action='store_true', help='Attempt rDNS lookups for RFC 1918 (private) addresses', required=False)
   parser.add_argument('-w', '--write', help='Write output to CSV file instead of stdout', required=False)
-  parser.add_argument('-s', '--sort', action='store_true', help='Sort addresses by count (descending)', required=False)
+  parser.add_argument('-s', '--sort-by-count', action='store_true', help='Sort addresses by count (descending)', required=False)
   parser.add_argument('-h', '--help', action='help', default=argparse.SUPPRESS, help='Show this help message and exit')
   args = vars(parser.parse_args())
 
@@ -178,7 +178,7 @@ def main():
   # Let's make sure the specified DNS server is working before we go any further ...
   success = checkServer(dnsServer)
   if (success == 0):
-    print(str(dnsServer) + ' is not responding to DNS queries. Are you sure that\'s the correct IP address?')
+    print(dnsServer + ' is not responding to DNS queries. Are you sure that\'s the correct IP address?')
     sys.exit(1)
 
   output = getData(filenames,dnsServer,includePrivate,sortByCount)
